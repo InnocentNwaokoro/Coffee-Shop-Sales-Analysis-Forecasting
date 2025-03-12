@@ -3,12 +3,29 @@
 ---
 ## ☕ Coffee Shop Sales Analysis & Forecasting
 ---
-## Table of contents
+## 📑 Table of Contents  
+
+1. [ Introduction](#-introduction)  
+2. [ Objectives](#-objectives)  
+3. [ Technologies Used](#-technologies-used)  
+4. [ Dataset Source](#-dataset-source)  
+5. [ Expected Insights](#-expected-insights)  
+6. [ Data Analysis](#-data-analysis)  
+   - [ Data Cleaning & Preprocessing](#-data-cleaning--preprocessing)  
+   - [ Display Summary Statistics for Numeric Columns](#-display-summary-statistics-for-numeric-columns)  
+   - [ Dataset Summary Statistics](#-dataset-summary-statistics)  
+7. [ Fit SARIMA Model](#-fit-sarima-model)  
+8. [ SARIMAX Model Results (Seasonal Forecasting)](#-sarimax-model-results-seasonal-forecasting)  
+9. [ Interpretation & Key Takeaways](#-interpretation--key-takeaways)  
+10. [ Conclusion & Recommendation](#-conclusion--recommendation)  
+11. [ Final Thoughts](#-final-thoughts)  
+12. [ Reference](#-reference)  
 
 
 
 
-## 📌 Introduction  
+
+## Introduction  
 Understanding customer behavior and sales trends is crucial for any business, especially in the coffee industry. This project explores sales data from a coffee shop to uncover key insights, optimize decision-making, and build predictive models for future sales trends.  
 
 Using data cleaning, exploratory data analysis (EDA), and time-series forecasting, this analysis aims to help businesses improve **pricing strategies, inventory management, and customer demand prediction**.  
@@ -28,7 +45,7 @@ By leveraging **SARIMA (Seasonal ARIMA)** models, we forecast future sales trend
 
 ---
 
-## 🛠️ Technologies Used  
+## Technologies Used  
 - **Python (Pandas, NumPy, Matplotlib, Seaborn, Statsmodels)** – Data processing, visualization, and modeling  
 - **Time-Series Models (SARIMA, ARIMA)** – Sales forecasting  
 - **GitHub** – Version control and documentation  
@@ -37,7 +54,7 @@ By leveraging **SARIMA (Seasonal ARIMA)** models, we forecast future sales trend
 ---
 
 ## 📂 Dataset Source  
-This dataset was obtained from **Maven Analytics Data Playground**.  
+This dataset was obtained from **Maven Analytics Data**.  
 
 🔗 [Click here to access the dataset](https://mavenanalytics.io/data-playground?page=6&pageSize=5)  
 
@@ -48,36 +65,53 @@ This dataset was obtained from **Maven Analytics Data Playground**.
 
 ![product_demand](https://github.com/user-attachments/assets/fc5cf9fe-61cb-40bd-bdbe-065ac104e7d7)
 
+The bar chart shows that coffee is the highest-selling product, followed by tea, while flavors and chocolate have the lowest sales, indicating a strong demand for beverages and potential opportunities to promote lower-performing items
+
 - What time of the day do people drink the most coffee?** *(Peak coffee consumption hours)*
 
 ![coffee_sales_by_hour](https://github.com/user-attachments/assets/44e16b6d-e569-4c77-9f03-b928c970c3bf)
 
+**Insights:** The line chart shows that coffee consumption peaks between 8 AM and 11 AM, with a gradual decline in the afternoon and a sharp drop after 7 PM, indicating that morning hours are the most critical for sales and marketing efforts.
   
 - Which days of the week have the highest sales?** *(Sales distribution by day)*
 
 ![sales_by_day_of_week](https://github.com/user-attachments/assets/7d02f03e-eebb-4b00-8320-a82ddafc4d4b)
+
+**Insight:**
+
+The bar chart shows that sales remain relatively consistent throughout the week, with Monday, Thursday, and Friday having slightly higher sales, while Saturday has the lowest sales, suggesting that weekday strategies may drive more revenue than weekends
   
 - Which month has the highest sales?** *(Monthly sales trends)*
 
 ![sales_jan_to_june](https://github.com/user-attachments/assets/0082d8fe-09de-4938-81f6-2391acd7d574)
 
+**Insight:**
+The bar chart shows a steady increase in sales from January to June, with June having the highest sales, indicating a growing demand trend and potential seasonality in mid-year sales
 
 - How do sales vary by store location?** *(Store performance analysis)*
 
 ![store_performance](https://github.com/user-attachments/assets/791e28b9-4ced-4e7e-bf24-ffc2f5709566)
+
+**Insight:** The bar chart shows that all store locations (Astoria, Kitchen, and Manhattan) have similar total sales, indicating consistent performance across branches with no significant outliers in store revenue.
 
 
 - What is the average sales per transaction?** *(Customer purchasing behavior)*
 
 ![transaction_quantity_distribution](https://github.com/user-attachments/assets/52ed128d-89f5-4ffa-93e9-28f5e08635c0)
 
+**Insights:** The histogram shows that most transactions involve purchasing 1 or 2 items, with very few transactions exceeding this quantity, indicating that customers typically buy in small quantities rather than bulk purchases.
+
 - What are the overall sales trends over time?** *(Daily/weekly/monthly sales trends)*
 
 ![sales_trend](https://github.com/user-attachments/assets/34d48d3f-828e-437c-a6fa-e39ecc446284)
 
+**Insight:** Sales have shown a steady upward trend with periodic fluctuations, indicating seasonal demand patterns and growth opportunities for optimizing inventory, staffing, and promotions. 
+
 - How can we predict future sales trends?** *(Sales forecasting using SARIMA)*  
 
 ![sales_forecasting_sarima](https://github.com/user-attachments/assets/9479edb1-ba51-4fff-a5b4-3f71aec1f285)
+
+**Insight:** The SARIMA forecast shows a steady upward trend in sales, with the model predicting continued growth in the coming weeks. The dashed orange line represents the forecasted sales, which closely follow the historical pattern, indicating that the model has effectively captured the seasonality and trends in the data. The forecast suggests that sales will remain strong, reinforcing the need for proactive inventory management, staffing adjustments, and marketing strategies to sustain the momentum
 
 ---
  
@@ -196,7 +230,7 @@ Below are the results from the **SARIMA(2,1,2)(1,1,[1],7) model**, applied to fo
 
 ---
 
-### **📌 Model Coefficients**
+### ** Model Coefficients**
 | Parameter | Coefficient | Std. Error | z-score | P-value | Confidence Interval (95%) |
 |-----------|------------|------------|---------|---------|---------------------------|
 | **AR(1)** | -0.5077    | 0.185      | -2.751  | 0.006   | [-0.869, -0.146] |
@@ -209,7 +243,7 @@ Below are the results from the **SARIMA(2,1,2)(1,1,[1],7) model**, applied to fo
 
 ---
 
-### **📌 Diagnostic Tests**
+### ** Diagnostic Tests**
 | Test | Value | P-Value |
 |------|-------|---------|
 | **Ljung-Box (L1) (Q)** | 0.07  | 0.78 (No significant autocorrelation) |
@@ -290,7 +324,7 @@ This forecast is valuable for **inventory management, staffing, and strategic pr
 
 
 ###  Recommendations  
-#### ** Data-Driven Business Strategies**
+####  Data-Driven Business Strategies
 1 **Optimize Inventory & Supply Chain**  
    - Stock up on high-demand products based on the **forecasted peak sales periods**.  
    - Reduce waste by **adjusting inventory** during low-sales periods.  
@@ -321,8 +355,17 @@ By continuously improving the forecasting model and incorporating real-time anal
 
 **Next Steps:** Implement these recommendations and track improvements in business performance.  
 
+---
 
+## Reference  
 
+Below are the sources used in this project for data and market insights:  
+
+1. **Dataset Source**: [Maven Analytics Data Playground](https://mavenanalytics.io/data-playground?page=6&pageSize=5)  
+2. **Coffee Deals & Pricing Trends**: [Amazon Coffee Deals](https://www.amazon.ca/s?k=coffee+deals&adgrpid=1356797577407288&hvadid=84800388712211&hvbmt=be&hvdev=c&hvlocphy=5259&hvnetw=o&hvqmt=e&hvtargid=kwd-84800018119765%3Aloc-32&hydadcr=21231_13490422&mcid=337873415b043b099afe66bbd74b1b8b&msclkid=a0b69080d6f6120a3965f7513333d054&tag=msncahydra-20&ref=pd_sl_881be77bxh_e)  
+3. **Current Coffee Discounts & Promotions**: [FlyerDeals - Coffee Specials](https://www.flyerdeals.ca/specials/coffee)  
+
+These sources provide **data for analysis, pricing insights, and real-time coffee market trends**.  
 
 
 
