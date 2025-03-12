@@ -46,26 +46,38 @@ This dataset was obtained from **Maven Analytics Data Playground**.
 ## 📈 Expected Insights  
 - Which products are the most popular?** *(Product demand insights)*
 
+![product_demand](https://github.com/user-attachments/assets/fc5cf9fe-61cb-40bd-bdbe-065ac104e7d7)
 
 - What time of the day do people drink the most coffee?** *(Peak coffee consumption hours)*
+
+![coffee_sales_by_hour](https://github.com/user-attachments/assets/44e16b6d-e569-4c77-9f03-b928c970c3bf)
 
   
 - Which days of the week have the highest sales?** *(Sales distribution by day)*
 
+![sales_by_day_of_week](https://github.com/user-attachments/assets/7d02f03e-eebb-4b00-8320-a82ddafc4d4b)
   
 - Which month has the highest sales?** *(Monthly sales trends)*
+
+![sales_jan_to_june](https://github.com/user-attachments/assets/0082d8fe-09de-4938-81f6-2391acd7d574)
 
 
 - How do sales vary by store location?** *(Store performance analysis)*
 
+![store_performance](https://github.com/user-attachments/assets/791e28b9-4ced-4e7e-bf24-ffc2f5709566)
+
 
 - What is the average sales per transaction?** *(Customer purchasing behavior)*
 
+![transaction_quantity_distribution](https://github.com/user-attachments/assets/52ed128d-89f5-4ffa-93e9-28f5e08635c0)
 
 - What are the overall sales trends over time?** *(Daily/weekly/monthly sales trends)*
 
+![sales_trend](https://github.com/user-attachments/assets/34d48d3f-828e-437c-a6fa-e39ecc446284)
 
 - How can we predict future sales trends?** *(Sales forecasting using SARIMA)*  
+
+![sales_forecasting_sarima](https://github.com/user-attachments/assets/9479edb1-ba51-4fff-a5b4-3f71aec1f285)
 
 ---
  
