@@ -209,7 +209,7 @@ print("\n📈 SARIMA Seasonal Forecast (Next 30 Days):\n")
 print(forecast_df_sarima)
 ```
 
-##  SARIMAX Model Results (Seasonal Forecasting)
+###  SARIMAX Model Results (Seasonal Forecasting)
 
 Below are the results from the **SARIMA(2,1,2)(1,1,[1],7) model**, applied to forecast coffee shop sales.
 
