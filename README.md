@@ -215,7 +215,7 @@ Below are the results from the **SARIMA(2,1,2)(1,1,[1],7) model**, applied to fo
 
 ---
 
-### ** Model Summary**
+###  Model Summary
 | Metric                         | Value      |
 |---------------------------------|------------|
 | **Dependent Variable**          | transaction_qty |
@@ -230,7 +230,7 @@ Below are the results from the **SARIMA(2,1,2)(1,1,[1],7) model**, applied to fo
 
 ---
 
-### ** Model Coefficients**
+###  Model Coefficients
 | Parameter | Coefficient | Std. Error | z-score | P-value | Confidence Interval (95%) |
 |-----------|------------|------------|---------|---------|---------------------------|
 | **AR(1)** | -0.5077    | 0.185      | -2.751  | 0.006   | [-0.869, -0.146] |
@@ -243,7 +243,7 @@ Below are the results from the **SARIMA(2,1,2)(1,1,[1],7) model**, applied to fo
 
 ---
 
-### ** Diagnostic Tests**
+###  Diagnostic Tests
 | Test | Value | P-Value |
 |------|-------|---------|
 | **Ljung-Box (L1) (Q)** | 0.07  | 0.78 (No significant autocorrelation) |
@@ -254,7 +254,7 @@ Below are the results from the **SARIMA(2,1,2)(1,1,[1],7) model**, applied to fo
 
 ---
 
-### ** SARIMA Seasonal Forecast (Next 30 Days)**
+###  SARIMA Seasonal Forecast (Next 30 Days)
 Below is the **30-day forecasted sales** based on the trained **SARIMA seasonal model**.
 
 | **Date**       | **Forecasted Sales** |
